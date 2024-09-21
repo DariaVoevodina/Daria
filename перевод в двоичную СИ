@@ -1,0 +1,15 @@
+public class Main {
+    public static <string> void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        int a = console.nextInt();
+        String b;
+        b = (String) "";
+        while (a > 0) {
+            int c = a % 2;
+            String d = Integer.toString(c);
+            b = d+b;
+            a /= 2;
+        }
+        System.out.println(b);
+    }
+}
