@@ -102,8 +102,9 @@
 
 
 
-```mermaid
+
 graph TD
+    ```mermaid
     A[Начало] -->B[/Ввести: a,b,c,d,e,f/]
     B --> C{a>0,b>0,c>0,d>0,e>0,f>0}
     C --> |Да| D{a=b=c=d и a^2=e^2/4+f^2/4}
@@ -112,7 +113,7 @@ graph TD
     D --> |Нет| F[/Вывод:NO/]
     F --> G[Конец]
     E --> G[Конец]]
-  
+  ```
 ```
 
 ![img.png](refs/img.png)
