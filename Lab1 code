@@ -12,16 +12,102 @@ public class Main {
         int d = in.nextInt();
         int e = in.nextInt();
         int f = in.nextInt();
-        //Проверяем являются ли числа натуральными
+         //Проверяем являются ли числа натуральными
         if (a>0&&b>0&&c>0&&d>0&&e>0&&f>0) {
             //Проверяем выполняются ли свойства ромба для введенных чисел
             if ((a == b && a == c && a == d) && (Math.pow(e / 2, 2) + Math.pow(f / 2, 2) == Math.pow(a, 2))) {
-                //Если все свойства выполняются, то выводим ответ YES
+                //Если все свойства выполняются,когда диагонали e,f, то выводим ответ YES
                 out.print("YES");
             }
             else {
-                //Если хотя бы одно свойство не выполняется, выводим ответ NO
-                out.print("NO");
+                if ((e == b && e == c && e == f) && (Math.pow(a / 2, 2) + Math.pow(b / 2, 2) == Math.pow(e, 2))) {
+                    //Если все свойства выполняются,когда диагонали a,b, то выводим ответ YES
+                    out.print("YES");
+                }
+                else {
+                    if ((a == b && a == e && a == f) && (Math.pow(c / 2, 2) + Math.pow(d / 2, 2) == Math.pow(a, 2))) {
+                        //Если все свойства выполняются,когда диагонали d,c, то выводим ответ YES
+                        out.print("YES");
+                    }
+                    else {
+                        if ((a == b && a == c && a == e) && (Math.pow(d / 2, 2) + Math.pow(f / 2, 2) == Math.pow(a, 2))) {
+                            //Если все свойства выполняются,когда диагонали d,f, то выводим ответ YES
+                            out.print("YES");
+                        }
+                        else {
+                            if ((e == b && e == c && e == f) && (Math.pow(a / 2, 2) + Math.pow(d / 2, 2) == Math.pow(e, 2))) {
+                                //Если все свойства выполняются, когда диагонали a,d,то выводим ответ YES
+                                out.print("YES");
+                            }
+                            else {
+                                if ((e == b && e == f && e == d) && (Math.pow(a / 2, 2) + Math.pow(c / 2, 2) == Math.pow(e, 2))) {
+                                    //Если все свойства выполняются,когда диагонали a,c, то выводим ответ YES
+                                    out.print("YES");
+                                }
+                                else {
+                                    if ((f == b && f == c && f == d) && (Math.pow(a / 2, 2) + Math.pow(e / 2, 2) == Math.pow(f, 2))) {
+                                        //Если все свойства выполняются,когда диагонали a,e, то выводим ответ YES
+                                        out.print("YES");
+                                    }
+                                    else {
+                                        if ((e == b && e == c && e == d) && (Math.pow(a / 2, 2) + Math.pow(f / 2, 2) == Math.pow(e, 2))) {
+                                            //Если все свойства выполняются, когда диагонали a,f,то выводим ответ YES
+                                            out.print("YES");
+                                        }
+                                        else {
+                                            if ((a == e && a == f && a == d) && (Math.pow(c / 2, 2) + Math.pow(b / 2, 2) == Math.pow(a, 2))) {
+                                                //Если все свойства выполняются,когда диагонали c,b , то выводим ответ YES
+                                                out.print("YES");
+                                            }
+                                            else {
+                                                if ((a == e && a == c && a == f) && (Math.pow(b / 2, 2) + Math.pow(d / 2, 2) == Math.pow(a, 2))) {
+                                                    //Если все свойства выполняются,когда диагонали b,d, то выводим ответ YES
+                                                    out.print("YES");
+                                                }
+                                                else {
+                                                    if ((a == f && a == c && a == d) && (Math.pow(e / 2, 2) + Math.pow(b / 2, 2) == Math.pow(a, 2))) {
+                                                        //Если все свойства выполняются,когда диагонали b,e, то выводим ответ YES
+                                                        out.print("YES");
+                                                    }
+                                                    else {
+                                                        if ((a == e && a == c && a == d) && (Math.pow(b / 2, 2) + Math.pow(f / 2, 2) == Math.pow(a, 2))) {
+                                                            //Если все свойства выполняются, когда диагонали b,f,то выводим ответ YES
+                                                            out.print("YES");
+                                                        }
+                                                        else {
+                                                            if ((a == b && a == f && a == d) && (Math.pow(e / 2, 2) + Math.pow(e / 2, 2) == Math.pow(a, 2))) {
+                                                                //Если все свойства выполняются,когда диагонали e,c, то выводим ответ YES
+                                                                out.print("YES");
+                                                            }
+                                                            else {
+                                                                if ((a == b && a == e && a == d) && (Math.pow(c / 2, 2) + Math.pow(f / 2, 2) == Math.pow(a, 2))) {
+                                                                    //Если все свойства выполняются,когда диагонали c,f , то выводим ответ YES
+                                                                    out.print("YES");
+                                                                }
+                                                                else {
+                                                                    if ((a == b && a == c && a == f) && (Math.pow(e / 2, 2) + Math.pow(d / 2, 2) == Math.pow(a, 2))) {
+                                                                        //Если все свойства выполняются,когда диагонали d,e , то выводим ответ YES
+                                                                        out.print("YES");
+                                                                    }
+                                                                    else {
+                                                                        out.print("NO");
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
             }
         }
         else {
